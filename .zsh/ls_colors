@@ -1,0 +1,106 @@
+# what colour will go to.. tty only here.
+COLOR tty
+
+# ls options
+OPTIONS -s -a -F -T 0
+
+# terms that support colour
+TERM linux
+TERM console
+TERM con132x25
+TERM con132x30
+TERM con132x43
+TERM con132x60
+TERM con80x25
+TERM con80x28
+TERM con80x30
+TERM con80x43
+TERM con80x50
+TERM con80x60
+TERM xterm
+TERM vt100
+TERM ansi
+
+# turn eightbit output on or off
+EIGHTBIT 1
+
+# colour codes
+# 0        to restore default color
+# 1        for brighter colors
+# 4        for underlined text
+# 5        for flashing text
+#30        for black foreground
+#31        for red foreground
+#32        for green foreground
+#33        for yellow (or brown) foreground
+#34        for blue foreground
+#35        for purple foreground
+#36        for cyan foreground
+#37        for white (or gray) foreground
+#40        for black background
+#41        for red background
+#42        for green background
+#43        for yellow (or brown) background
+#44        for blue background
+#45        for purple background
+#46        for cyan background
+#47        for white (or gray) background
+
+NORMAL 00         # global default, although everything should be something.
+FILE   00         # normal file
+DIR    32         # directory
+LINK   36         # symbolic link
+FIFO   01;33      # pipe
+SOCK   01;34      # socket
+BLK    01;40;33   # block device driver
+CHR    01:40;33   # character device driver
+EXEC   35         # executable      
+
+# colorised extensions
+.Z     01;37
+.z     01;37
+.gz    01;37
+.zip   01;37
+.ZIP   01;37
+.lha   01;37
+.lzh   01;37
+.arj   01;37
+.ARJ   01;37
+.LHA   01;37
+.LZH   01;37
+.tgz   01;37
+.gif   01;34
+.jpg   01;34
+.GIF   01;34
+.JPG   01;34
+.iff   01;34
+.IFF   01;34
+.BMP   01;34
+.bmp   01;34
+.xpm   01;34
+.xbm   01;34
+.ppm   01;34
+.tif   01;34
+.TIF   01;34
+.ps    01;34
+.PS    01;34
+.tga   01;34
+.au    01;33
+.AU    01;33
+.wav   01;33
+.WAV   01;33
+.8svx  01;33
+.aiff  01;33
+.voc   01;33
+.VOC   01;33
+.snd   01;33
+.SND   01;33
+.html  01;34
+.c     01;35;40
+.h     01;36;40
+.o     01;37;40
+.cpp   01;35;40
+.java  01;30;47
+.class 01;34;47
+.ascii 01;36
+

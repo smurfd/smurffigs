@@ -1,0 +1,10 @@
+# for completion, list all matches immediately
+set show-all-if-ambiguous On
+# completion items max no.
+set completion-query-items 1024
+# allow 8 bit input
+set meta-flag On
+# line editing mode
+set editing-mode emacs
+# use horizontal scrolling, not linewrapping
+#set horizontal-scroll-mode Off
