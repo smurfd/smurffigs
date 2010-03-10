@@ -1,0 +1,67 @@
+#xterm*Font: -artwiz-cure-medium-r-normal-*-6-120-75-75-m-70-iso8859-1
+#xterm*font: -artwiz-cure-medium-r-normal--11-*-75-75-p-90-iso8859-1
+
+Xft*antialias: true 
+Xft*dpi:96 
+
+
+
+xterm*boldMode:  off
+xterm*scrollBar: false
+xterm*geometry: 120x30
+xterm*saveLines:         5000
+
+#xterm*font: -artwiz-lime-medium-r-normal--10-110-75-75-*-50-iso8859-1
+#xterm*boldFont: -artwiz-lime-medium-r-normal--10-110-75-75-*-50-iso8859-1
+
+xterm*faceName:		XFT:DejaVu Sans:pixelsize=9
+xterm*foreground:        black
+xterm*background:        #f6f6f6
+
+xterm*AutoRaise:        on
+xterm*jumpScroll:        true
+xterm*multiScroll:       true
+xterm*cutNewline:        False
+xterm*transparent: false
+xterm*inheritPixmap: false 
+xterm*shading: 100
+
+
+! BLACK
+xterm*color0: #222222
+xterm*color8: #444444
+
+! RED
+xterm*color1: #b78fff
+#ca3a3a
+xterm*color9: #8fc4ff
+#f02828
+
+! GREEN
+xterm*color2: #87b7ff
+#xterm*color2: #5ba55b
+#xterm*color2: #2770de
+xterm*color10: #56d856
+#8fc4ff
+
+! YELLOW
+xterm*color3: #aaaaaa
+xterm*color11: #777777
+
+! BLUE
+xterm*color4: #2770de
+xterm*color12: #3966aa
+
+! MAGENTA
+xterm*color5: #6c9de7
+xterm*color13: #6c9de7
+
+! CYAN
+xterm*color6: #6c9de7
+xterm*color14: #6c9de7
+
+!WHITE
+xterm*color7: #000000
+xterm*color15: #6c9de7
+
+

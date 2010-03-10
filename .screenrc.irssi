@@ -1,0 +1,20 @@
+defscrollback 30000
+termcapinfo xterm ti@:te@
+
+hardstatus alwayslastline
+
+screen -t dalnet /home/smurfofshadz/Code/.build/bin/irssi --connect=irc.dal.net
+screen -t freenode /home/smurfofshadz/Code/.build/bin/irssi --connect=irc.freenode.org
+screen -t gimpnet /home/smurfofshadz/Code/.build/bin/irssi --connect=irc.gimp.org
+
+altscreen on
+term screen-256color
+#bindkey -k k2 next
+#bindkey -k k1 prev
+bindkey "^[," prev
+bindkey "^[." next
+
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
+startup_message off
+
