@@ -15,9 +15,9 @@ source $ZSH/oh-my-zsh.sh
 export TERM=xterm-256color
 # User configuration
 
-#export PATH=/home/smurf/.cargo/bin:/usr/local/bin:$PATH
-export PATH=/usr/local/bin:$PATH
-export MOZCONFIG=/home/smurf/.mozconfig
+export PATH=/usr/local/bin:/home/smurfd/Projects/Source/Mozilla/Arcanist/arcanist/bin/:/home/smurfd/Projects/Source/Mozilla/Arcanist/review/:/home/smurfd/Projects/Builds/Renpy:$PATH
+export MOZCONFIG=~/.mozconfig
+
 if [ -r /etc/debian_version ] ; then
 # DEBIAN
 alias ls='ls --color -p'
@@ -28,6 +28,8 @@ alias _install='sudo apt install'
 alias _uninstall='sudo apt remove'
 alias _info='uname -a && uptime'
 alias _addkey='gpg --keyserver pgpkeys.mit.edu --recv-key $1 && gpg -a --export $1 | sudo apt-key add -'
+alias _server="ssh -p 2222 smurfd@192.168.1.4"
+alias _tv="ssh smurf@192.168.1.6"
 alias _hold="sudo apt-mark hold "
 elif [ -r /etc/SUSE-brand ] ; then
 # openSUSE
@@ -37,11 +39,12 @@ alias _upgrade='sudo zypper dup && sudo plymouth-set-default-theme -R breeze && 
 alias _search='zypper se'
 alias _install='sudo zypper in'
 alias _uninstall='sudo zypper rm'
+alias _server="ssh -p 2222 smurfd@192.168.0.10"
 alias _info='uname -a && uptime'
-alias _fixNvidia='sudo zypper in --force nvidia-glG04 nvidia-computeG04 nvidia-gfxG04-kmp-default x11-video-nvidiaG04'
+alias _fixNvidia='sudo zypper in --force nvidia-glG05 nvidia-computeG05 nvidia-gfxG05-kmp-default x11-video-nvidiaG05'
 alias python='/usr/bin/python3'
-alias v='/home/smurf/Projects/Builds/VIM/bin/vim'
-alias gv='GTK_THEME=Adwaita /home/smurf/Projects/Builds/VIM/bin/gvim'
-alias s='/home/smurf/Projects/Builds/SublimeText/sublime_text'
-alias term='GTK_THEME=Materia-dark gnome-terminal'
-f
+alias v='/home/smurfd/Projects/Builds/VIM/bin/vim'
+alias gv='GTK_THEME=Adwaita /home/smurfd/Projects/Builds/VIM/bin/gvim'
+alias s='/home/smurfd/Projects/Builds/SublimeText/sublime_text'
+fi
+
