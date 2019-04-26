@@ -1,0 +1,15 @@
+select 0
+
+bind ^m
+bind ^i
+bind ^f
+bind ^s
+bind ^w
+
+#bind ^t screen -t top /usr/bin/top
+#bindkey "^[s" screen -t zsh /bin/zsh
+screen -t freenode irssi --connect=chat.freenode.org -n smurfd
+screen -t mozilla irssi --connect=irc.mozilla.org -n smurfd
+
+hardstatus alwayslastline '%{= M} %H%{= G} %l %= %{= w}%-w%{+b r}%n*%t%{-b r}%{w}%+w %=%{b}[ %{c}%d %D %{B}%c %{b}]'
+# ctrl+a,n to cycle through screen windows
