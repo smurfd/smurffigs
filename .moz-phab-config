@@ -1,0 +1,14 @@
+[ui]
+no_ansi = False
+
+[arc]
+arc_command = arc
+
+[submit]
+auto_submit = False
+always_blocking = False
+warn_untracked = True
+
+[updater]
+self_last_check = 0
+arc_last_check = 0
