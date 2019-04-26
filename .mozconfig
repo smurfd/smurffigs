@@ -1,0 +1,14 @@
+export CXX=clang++-7.0.1
+export CC=clang-7.0.1
+ac_add_options --enable-linker=lld
+ac_add_options --disable-elf-hack
+CC="clang -fcolor-diagnostics"
+CXX="clang++ -fcolor-diagnostics"
+ac_add_options --with-ccache=/usr/bin/ccache
+# MOZ_TELEMETRY_REPORTING=1
+# MOZILLA_OFFICIAL=1
+mk_add_options PYTHON=/usr/bin/python2
+
+# DEBUG
+#export MOZ_DEBUG_SYMBOLS=1
+#ac_add_options --enable-debug-symbols="-gdwarf-2"
